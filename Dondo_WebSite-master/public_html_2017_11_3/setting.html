@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Dondo</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="setting.css">
+        <script type="text/javascript" src="setting.js"></script>
+        <script type="text/javascript" src="cookie.js"></script>
+    </head>
+    <body>
+        <div class="nav">
+            <img alt="timeline" src="timeline_winered.png" id="timeline_img" onclick="jumpTimeLine()">
+            <img alt="profile" src="profile_winered.png" id="profile_img" onclick="jumpProfile()">
+            <img alt="setting" src="config_icon2.png" id="setting_img" onclick="jumpSetting()">
+            <p class="nav_p" onclick="jumpTimeLine()">TIME LINE</p>
+            <p class="nav_p" onclick="jumpProfile()">PROFILE</p>
+            <p class="nav_p" onclick="jumpSetting()">SETTING</p>
+         </div>
+        
+        <div class="set">
+            <h1>SETTING</h1>
+            <ul id="list">
+                <li onclick="changename()" class="button">changeName</li>
+                <li onclick="changepass()" class="button">changePass</li>
+                <li onclick="editprofile()" class="button">editProfile</li>
+                <li onclick="logout()" class="button">logout</li>
+                <li onclick="unsubscride()" class="button">unsubscride</li>
+                <li onclick="sendmail()" class="button">contact</li>
+            </ul>
+        </div>
+    </body>
+</html>

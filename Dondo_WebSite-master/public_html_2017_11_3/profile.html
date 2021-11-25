@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Dondo</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="profile.css">
+        <script type="text/javascript" src="cookie.js"></script>
+        <script type="text/javascript" src="profile.js"></script>
+    </head>
+
+    <body onload="getProfile()" class="profile">
+
+        <div class="nav">
+            <img alt="timeline" src="timeline_winered.png" id="timeline_img" onclick="jumpTimeLine()">
+            <img alt="profile" src="profile_winered.png" id="profile_img" onclick="">
+            <img alt="setting" src="config_icon2.png" id="setting_img" onclick="jumpSetting()">
+            <p class="nav_p" onclick="jumpTimeLine()">TIME LINE</p>
+            <p class="nav_p" onclick="">PROFILE</p>
+            <p class="nav_p" onclick="jumpSetting()">SETTING</p>
+         </div>
+
+         <div class="background">
+        <div class="profile">
+            <ul id="list">
+                
+            </ul>
+        </div>
+         </div>
+
+        <img alt="POST" src="post_button.png" onclick="post_con()" id="post_button" />
+    </body>
+</html>
